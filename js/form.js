@@ -25,7 +25,7 @@ form.addEventListener('submit', function(e){
   changeText();
   // Reirigir después del mensaje
   setTimeout(function() {
-    window.location.href = '/html/turno_asignado.html';  
+    window.location.href = './html/turno_asignado.html';  
   }, 1000);
 
 });
