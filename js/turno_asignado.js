@@ -52,9 +52,9 @@ function generarTurno() {
     const aceptar = 'Aceptar'
     // Detener la animación después de 3 segundos y mostrar el turno asignado
     setTimeout(function() {
-        const puesto=['F= 1','F= 2','F= 3','F= 4','F= 5','F= 6','F= 7','F= 8','F= 9','F= 10',
-        'F=11','F= 12','F= 13','F= 14','F= 15','F= 16','F= 17','F= 18','F= 19','F= 20',
-        'F= 21','F= 23','F= 24','F= 25','F= 26','F= 27'];
+        const puesto=['ADM = F1','VD= F2','APOYO ARCO = F3','CONTROL ZONA AIRE = F4','ARCO=F5','DESARMADOR=F6','DESEMBARQUE=F7','VOR=F8','CA.NORTEF9','CA. SUR=F10',
+        'MA. RAYOS X=F11','DET.METALES=F12','RADAR=F13','ARMADOR=F14','SÓTANO=F15','INGR.AREAS.REST=F16','SENDA.PLANEO=F17','A.SALA=F18','A.ARE.RESTRI=F19','PARQUEADERO=F20',
+        'DISPONIBLE=F21','A.PARQUEADERO=F23','A,C,SUR=24','A.PARQUE=F25','A.NORTE=F26','A.RADAR=F27'];
         const turnoNumero = document.createElement('span');
         if (puesto.length > 0) {
             const indiceAleatorio = Math.floor(Math.random() * puesto.length);
