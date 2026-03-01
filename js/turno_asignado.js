@@ -54,7 +54,7 @@ function generarTurno() {
             const indiceAleatorio = Math.floor(Math.random() * puesto.length);
             const turnoAsignado = puesto[indiceAleatorio];  
             turnoNumero.textContent = turnoAsignado;
-            turnoNumero.style.fontSize = '2.5rem';
+            turnoNumero.style.fontSize = '2rem';
             turnoNumero.style.padding = '10px 20px';
             turnoNumero.style.marginBottom = '20px';
             turnoNumero.style.borderRadius = '5px';
