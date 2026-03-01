@@ -93,9 +93,9 @@ function aceptarTurno() {
     botonAceptar.textContent = 'Turno Aceptado';
     console.log('Turno aceptado:', turnoAsignado);
     alert(`Has aceptado tu turno: ${turnoAsignado}`);
-    // Redirigir a la página principal después de 2 segundos
+    // Redirigir a la página principal después de 1 segundo
     setTimeout(function() {
-        window.location.href = '../index.html';  
-    }, 2000);
+        window.location.href = 'index.html';  
+    }, 1000);
     
 }
