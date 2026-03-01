@@ -1,10 +1,6 @@
 const turnoAsignadoDiv = document.getElementById('turno_asignado');
 const nombreSpan = document.getElementById('nombre');
 
-// Obtener el nombre del usuario desde el span en index.html
-sessionStorage.setItem('nombreUsuario', nombreSpan ? nombreSpan.textContent : 'Usuario');
-const nombreUsuario = sessionStorage.getItem('nombreUsuario') || 'Usuario';
-
 const html=
 `<div  style="color: #6A52CB; text-align: center; font-size: 2rem; display: flex; flex-direction: column; align-items: center;"><h2>Hola : <span id="nombre">${nombreUsuario}</span></h2>
     <span><h2 style="margin-top:-3rem; font-size:1.9rem; color:#733F3F">Tu turno es:</h2></span>
@@ -16,7 +12,7 @@ const html=
 </div>
 
 `;
-
+const nombreUsuario = sessionStorage.getItem('nombreUsuario') || 'Usuario';
 
 // Insertar el HTML en el div turno_asignado
 turnoAsignadoDiv.innerHTML = html;
@@ -44,24 +40,25 @@ function generarTurno() {
     turnDiv.style.border='None'
     turnDiv.style.borderBottom = '4px solid red';
     turnDiv.style.animation = 'girar 5s linear infinite';
-    turnDiv.style.width = '250px';
-    turnDiv.style.height = '250px';
+    turnDiv.style.width = 'auto';
+    turnDiv.style.height = 'auto';
     turnDiv.style.borderRadius = '50%';
     const textoTurno = document.getElementById('aceptarTurno');
     textoTurno.textContent = 'Generando turno...';
     const aceptar = 'Aceptar'
     // Detener la animación después de 3 segundos y mostrar el turno asignado
     setTimeout(function() {
-        const puesto=['ADM = F1','VD= F2','APOYO ARCO = F3','CONTROL ZONA AIRE = F4','ARCO=F5','DESARMADOR=F6','DESEMBARQUE=F7','VOR=F8','CA.NORTEF9','CA. SUR=F10',
+        const puesto=['ADM=F1','VD=F2','APOYO ARCO=F3','CTR.Z.AIRE=F4','ARCO=F5','DESARMADOR=F6','DESEMBARQUE=F7','VOR=F8','CA.NORTEF9','CA. SUR=F10',
         'MA. RAYOS X=F11','DET.METALES=F12','RADAR=F13','ARMADOR=F14','SÓTANO=F15','INGR.AREAS.REST=F16','SENDA.PLANEO=F17','A.SALA=F18','A.ARE.RESTRI=F19','PARQUEADERO=F20',
-        'DISPONIBLE=F21','A.PARQUEADERO=F23','A,C,SUR=24','A.PARQUE=F25','A.NORTE=F26','A.RADAR=F27'];
+        'DISPONIBLE=F21','A.PARQUEADERO=F23','A.C.SUR=24','A.PARQUE=F25','A.NORTE=F26','A.RADAR=F27'];
+        // Generar un índice aleatorio para seleccionar un turno del arreglo
         const turnoNumero = document.createElement('span');
         if (puesto.length > 0) {
             const indiceAleatorio = Math.floor(Math.random() * puesto.length);
             const turnoAsignado = puesto[indiceAleatorio];  
             turnoNumero.textContent = turnoAsignado;
-            turnoNumero.style.fontSize = '4rem';
-            turnoNumero.style.color = '#3813cdff';
+            turnoNumero.style.fontSize = '0.2rem';
+            turnoNumero.style.color = 'rgb(140, 43, 67)';
             turnoNumero.style.fontWeight = 'bold';
             // Detener la animación y mostrar el turno asignado
             turnDiv.style.animation = 'none';
