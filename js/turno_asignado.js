@@ -95,7 +95,7 @@ function aceptarTurno() {
     alert(`Has aceptado tu turno: ${turnoAsignado}`);
     // Redirigir a la página principal después de 1 segundo
     setTimeout(function() {
-        window.location.href = './index.html';  
+        window.location.href = '/index.html';  
     }, 1000);
     
 }
