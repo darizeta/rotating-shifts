@@ -46,11 +46,12 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+/* Estilos para el formulario de turno asignado */  
 select{
   width: 100%;
   padding: 10px;
 }
+/* Estilos para el botón de generar turno */
 input[type="submit"] {
   display: block;
   margin: 0 auto;
@@ -65,5 +66,5 @@ input[type="submit"] {
   width: 100%;
 }
 input[type="submit"]:hover {
-  background-color: #218838;
+  background-color: #12892c;
 }
