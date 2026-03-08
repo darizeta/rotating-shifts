@@ -36,7 +36,7 @@ function generarTurno() {
     // Deshabilitar el botón durante la animación
     botonTurnos.disabled = true; 
     turnDiv.style.border = '2px solid red';
-    turnDiv.style.animation = 'girar 4.5s ease-out';
+    turnDiv.style.animation = 'girar 5s ease-out';
     turnDiv.style.borderLeftColor = 'transparent';
     turnDiv.style.borderRightColor = 'transparent';
     turnDiv.style.display = 'flex';
