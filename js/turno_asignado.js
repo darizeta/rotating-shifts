@@ -4,8 +4,8 @@ const html=
 `<div style="color: #010006; text-align: center; font-size: 3rem; display: flex; flex-direction: column; align-items: center;"><h2> <span id="nombre">${nombreUsuario}</span></h2>
     <span><h3 style="margin-top:-2rem; font-size:2.5rem; color:#733F3F">Tu turno es:</h3></span>
     <div id="turn" style="border-radius:50%; margin-top:-30px; border:2px solid red; width: 300px; height: 300px; background-color: #f5eeee"></div>
-    <button id="aceptarTurno" type="submit" style="margin-top: 20px; padding: 15px 50px; background-color: #3813cdff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem;
-    transition: background-color 0.3s;">Iniciar</button>
+    <button id="aceptarTurno" type="submit" style="margin-top: 20px; padding: 15px 40px; background-color: #3813cdff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1.5rem;
+    font-family: 'monospace'; transition: background-color 0.3s;">Iniciar</button>
 </div>
 `;
 
